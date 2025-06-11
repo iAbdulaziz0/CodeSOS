@@ -1,39 +1,17 @@
 🔹 Project Overview: CodeSOS
-CodeSOS is a community-driven web application that allows developers to share programming problems and get help from others. Users can sign up, log in, and post problems with an optional image and detailed description. Other users can browse, view, and comment on these problems to offer support or solutions.
+CodeSOS is a web-based platform designed to help developers share and solve coding problems within a supportive community. Users can register, log in, and post programming issues by providing a title, image, and detailed description. Other users can view these problems, leave comments, and suggest solutions.
 
-The platform is built to foster collaboration and quick troubleshooting among developers by creating a centralized space for coding issues.
+The platform promotes collaboration and learning by allowing programmers to interact, assist each other, and exchange ideas through real-time problem discussions.
 
-🔹 Main Features
-Secure user authentication (sign up & login)
+🔹 Key Features
+User registration and login system
 
-Post a new programming problem with a title, description, and image
+Post coding problems with image and description
 
-Browse latest shared problems
+Browse and view all posted problems
 
-View problem details and user profiles
+Comment on problems and suggest solutions
 
-Comment system for interactive discussions
+View problem details and discussion history
 
-Session management to ensure only logged-in users can post or comment
-
-🔹 Project Structure
-
-CodeSOS/
-│
-├── index.php                 → Homepage that lists all shared problems
-├── login.php                 → Login page for registered users
-├── signup.php                → Registration page for new users
-├── post_problem.php          → Page to create and submit a new problem
-├── problem_details.php       → Page to view a specific problem and its comments
-├── user_profile.php          → Displays a user's profile and their posted problems
-│
-├── conn.php                  → Contains database connection logic
-│
-├── uploads/                  → Folder to store uploaded images (problems & profile pictures)
-│
-├── image/                    → Static images (logo, placeholders, etc.)
-│
-├── design.css                → Custom CSS styles for layout and appearance
-├── style.css                 → Additional styles (e.g., Arabic form styling)
-│
-└── comments.php              → Handles comment submission logic
+Simple, user-friendly interface with session management
