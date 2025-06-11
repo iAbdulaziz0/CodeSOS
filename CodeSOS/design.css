@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+body {
+    background-image: url('image/photo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the top */
+    padding-top: 20px; /* Add padding to the top to accommodate the header */
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 10px;
+
+    /* التأثير الزجاجي */
+    background: rgba(255, 255, 255, 0.1); /* خلفية شفافة خفيفة */
+    backdrop-filter: blur(10px); /* تأثير ضبابي */
+    -webkit-backdrop-filter: blur(10px); /* دعم لسفاري */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* حواف ناعمة */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* ظل خفيف */
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 60px;
+}
+
+
+.logo img {
+  height: 200px; /* كبرنا الحجم */
+  transition: 0.3s ease;
+  filter: drop-shadow(0 0 10px rgba(98, 0, 255, 0.8)); /* يضيف ضوء خارجي ناعم */
+}
+
+/* عند تمرير الماوس يظهر ضوء أقوى */
+.logo img:hover {
+  filter: drop-shadow(0 0 20px rgb(40, 0, 115));
+  transform: scale(1.05);
+}
+
+
+.login-link a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.transparent-box {
+    background-color: rgba(94, 94, 94, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 500px;
+    color: white;
+    margin-top: 80px; /* Add margin to the top to push the form below the header */
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+}

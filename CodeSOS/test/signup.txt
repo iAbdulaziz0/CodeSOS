@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CodeSOS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <div>
+        <div class="d-flex justify-content-center align-items-center min-vh-100">
+        <div class="col-sm-6">
+                <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post" enctype="multipart/form-data">
+
+                <legend> <h1>Form Registration</h1> </legend>  
+                <p>Create a new account to get started. It's quick and easy!</p>
+
+                <label> <b> Name </b> </label>     <input class="form-control" type="text" name="name" require> 
+                <label> <b> Email </b> </label>    <input class="form-control" type="email" name="email" require> 
+                <label> <b> Password </b> </label> <input class="form-control" type="password" name="password" require> <br>
+
+                <label>Gender</label> <br>
+                <input type="radio" name="gender" value="Male">   <label>Male</label>
+                <input type="radio" name="gender" value="Female"> <label>Female</label> <br><br>
+                <hr class="mb-3">
+                <label>Developer level</label> <br>
+                <input type="radio" name="status" value="student"> <label>Junior Developer</label> <br>
+                <input type="radio" name="status" value="employed"> <label>Mid-Level Developer</label> <br>
+                <input type="radio" name="status" value="unemployed"> <label>Senior Developer</label> <br><br>
+
+                <b>What Kind of Developer Are You?</b>    
+                    <select name="city"> 
+                    <option>Choose one</option>
+                    <option name="web">Web Developer</option>
+                    <option>Mobile App Developer</option>
+                    <option>Software Developer</option>
+                    <option>AI & Data Developer</option> 
+                    </select> <br><br>
+                    
+                
+                <label>Profile</label> <input type="file" name="profile"> <br><br>
+                <input class="btn btn-primary" type="submit" name="submit" value="Sign up">
+            
+        </form>
+        </div>
+    </div>
+
+    <?php
+    
+    if (isset($_POST['submit'])) {
+        echo "Submited";
+        
+    }
+    
+    ?>
+</body>
+</html>
